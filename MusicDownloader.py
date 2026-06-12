@@ -8,7 +8,7 @@ def extract_audio_info(url):
         'format': 'bestaudio/best',
         'quiet': True,
         'noplaylist': True,
-        'cookies-from-browser': "chrome"
+        "cookies": "chromewebstore.google.com_cookies.txt"
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
