@@ -6,7 +6,7 @@ app = Flask(__name__)
 def extract_audio_info(url):
     ydl_opts = {
         'format': 'bestaudio/best',
-        'quiet': True,
+        'quiet': False,
         'noplaylist': True,
         "cookies": "chromewebstore.google.com_cookies.txt"
     }
