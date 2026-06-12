@@ -8,6 +8,7 @@ def extract_audio_info(url):
         'format': 'bestaudio/best',
         'quiet': True,
         'noplaylist': True,
+        'cookies-from-browser': "chrome"
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -59,4 +60,4 @@ def get_audio():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=8080)
